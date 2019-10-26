@@ -10,7 +10,7 @@ import (
 type AddressObject struct {
 	Text       string   `pg:"-"`
 	tableName  struct{} `pg:"fias.addrobj"`
-	AOID       string   `pg:"pk,type:uuid"`
+	AOID       string   `pg:",pk,type:uuid"`
 	AOGUID     string   `pg:"type:uuid"`
 	FORMALNAME string
 	OFFNAME    string

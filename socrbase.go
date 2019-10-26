@@ -9,7 +9,7 @@ type Socrbase struct {
 	LEVEL     string
 	SCNAME    string
 	SOCRNAME  string
-	KOD_T_ST  string `pg:"pk"`
+	KOD_T_ST  string `pg:",pk"`
 }
 
 func (s *Socrbase) CreateTable(db *pg.DB) {

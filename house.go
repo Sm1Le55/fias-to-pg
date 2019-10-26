@@ -8,7 +8,7 @@ import (
 type House struct {
 	Text       string   `pg:"-"`
 	tableName  struct{} `pg:"fias.house"`
-	HOUSEID    string   `pg:"pk,type:uuid"`
+	HOUSEID    string   `pg:",pk,type:uuid"`
 	HOUSEGUID  string   `pg:"type:uuid"`
 	AOGUID     string   `pg:"type:uuid"`
 	HOUSENUM   string
