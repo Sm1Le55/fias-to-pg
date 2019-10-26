@@ -1,0 +1,23 @@
+# Database credentials
+database:
+  user: "pguser"
+  pass: "password"
+  address: "127.0.0.1:5432"  
+  dbname: "pgdatabase"
+
+# DBF configurations
+dbf:
+  codepage: "CP866"
+  folder: './fias_delta_dbf/'
+  threads: 10
+
+# Logger configurations
+log:
+  path : './logger.log'
+
+# Program configurations
+program:
+  update: false #Update rows (!no insert new)  
+  droptables: false # Drop tables (addrobj, house, socrbase) before importing  
+  createtables: false # Create tables (addrobj, house, socrbase) before importing  
+  dropirrelevantrows: true # Drop irrelevant rows in tables (now only addrobj: livestatus != 1 AND currstatus != 0)
